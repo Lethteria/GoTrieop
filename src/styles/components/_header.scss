@@ -5,7 +5,7 @@
   justify-content: space-between;
   align-items: center;
 
-  padding: 40px 50px;
+  padding: 40px 20px;
 
   &__menu__item {
     position: relative;
@@ -94,7 +94,14 @@
   }
 }
 
+@media (min-width: 576px){
 
+  .header {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+}
 @media (min-width: 768px){
   .header__burger {
     display: none;

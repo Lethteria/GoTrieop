@@ -4,14 +4,13 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding: 30px 50px;
+  padding: 30px 20px;
 }
 
 .feedback__card {
   width: 39%;
   height: auto;
-
-  margin-right: 5%;// 65px
+  order: 1;
 }
 
 .card__img {
@@ -25,6 +24,8 @@
   width: 100%;
   max-width: 630px;
 
+  text-align: center;
+
   .h3__title {
     margin-bottom: 15px;
   }
@@ -32,6 +33,10 @@
   .text_weight_normal {
     font-weight: 400;
   }
+}
+
+.feedback__content {
+  margin-bottom: 30px;
 }
 
 .feedback__text {
@@ -43,7 +48,10 @@
 
 .feedback__user-info {
   display: flex;
+  justify-content: center;
   margin-bottom: 20px;
+
+  text-align: left;
 }
 
 .user__avatar {
@@ -64,14 +72,36 @@
   transform: scale(0.7);
 }
 
+@media (min-width: 576px){
+
+  .feedback {
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
 @media (min-width: 768px){
 
   .feedback {
     flex-wrap: nowrap;
   }
 
+  .feedback__card {
+    order: 0;
+    margin-right: 5%;
+  }
+
   .feedback__descr {
     width: 61%;
+    text-align: left;
+  }
+
+  .feedback__user-info {
+    justify-content: left;
+  }
+
+  .feedback__content {
+    margin-bottom: 0;
   }
 }
 
