@@ -1,0 +1,43 @@
+@import "../../colors";
+
+.nav {
+  //display: flex;
+}
+.nav__menu {
+  display: flex;
+
+  .menu__item {
+    margin: 0 15px;
+
+    font-weight: 500;
+    font-size: 15px;
+  }
+}
+.menu__item {
+  position: relative;
+}
+
+@media (min-width: 768px){
+  .active_link::after {
+    content: "";
+    position: absolute;
+    bottom: -5px;
+    left: 0;
+
+    width: 35px;
+    height: 4px;
+
+    color: inherit;
+    border-radius: 100px;
+    background-color: $grey-main;
+  }
+}
+
+@media (min-width: 992px){
+  .nav__menu {
+    .menu__item {
+      margin-right: 40px;
+      margin-left: 40px;
+    }
+  }
+}

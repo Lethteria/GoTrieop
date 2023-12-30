@@ -1,0 +1,80 @@
+.h1__title{
+  font-size: 55px;
+  font-weight: 600;
+}
+.h2__title {
+  font-size: 55px;
+  font-weight: 600;
+}
+.h3__title {
+  font-size: 45px;
+  font-weight: 500;
+}
+
+.h4__title {
+  font-size: 33px;
+  font-weight: 500;
+}
+
+.h5__title {
+  font-size: 25px;
+  font-weight: 500;
+}
+
+@media (min-width: 576px) {
+  .h1__title{
+    font-size: 36px;
+  }
+  .h2__title {
+    font-size: 36px;
+  }
+  .h3__title {
+    font-size: 28px;
+  }
+  .h4__title {
+    font-size: 22px;
+  }
+
+  .h5__title {
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 992px) {
+  .h1__title{
+    font-size: 45px;
+  }
+  .h2__title {
+    font-size: 45px;
+  }
+  .h3__title {
+    font-size: 36px;
+  }
+  .h4__title {
+    font-size: 25px;
+  }
+
+  .h5__title {
+    font-size: 20px;
+  }
+}
+
+@media (min-width: 1280px) {
+  .h1__title{
+    font-size: 55px;
+  }
+  .h2__title {
+    font-size: 55px;
+  }
+  .h3__title {
+    font-size: 45px;
+  }
+
+  .h4__title {
+    font-size: 33px;
+  }
+
+  .h5__title {
+    font-size: 25px;
+  }
+}

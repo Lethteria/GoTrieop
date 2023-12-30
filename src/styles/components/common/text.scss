@@ -1,0 +1,18 @@
+@import "../../colors";
+.text_color_light {
+  color: $white;
+}
+.text_color_dark {
+  color: $black;
+}
+.text_color_grey {
+  color: $black;
+  opacity: 0.5;
+}
+.text_color_grey_light {
+  color: $white;
+  opacity: 0.5;
+}
+.text_color_orange {
+  color: $orange-main;
+}

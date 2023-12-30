@@ -1,0 +1,149 @@
+@import "../colors";
+
+.introduce {
+  position: relative;
+}
+
+.introduce__content {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 50px;
+  border-bottom: 10px solid $grey-light;
+}
+
+.introduce__info {
+  width: 100%;
+
+  .h1__title {
+    margin-bottom: 30px;
+  }
+
+  .h5__title {
+    margin-bottom: 30px;
+  }
+}
+
+.introduce__label {
+  display: inline-block;
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.label_style {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  font-size: 16px;
+}
+
+
+.introduce__img {
+  position: relative;
+  width: 100%;
+  height: 300px;
+
+  background: no-repeat right bottom url("../../../public/images/introduce.png");
+  background-size: contain;
+}
+
+.introduce__svg {
+  position: absolute;
+}
+
+.wave_top_right {
+  top: -200px;
+  right: -20px;
+}
+.wave_bottom_left {
+  left: 150px;
+  bottom: 50px;
+}
+.circle_fill {
+  fill: $green-light;
+}
+
+.circle_top_left {
+  top: 50px;
+  left: 30px;
+}
+
+.circle_bottom_right {
+  bottom: 270px;
+  right: 0;
+}
+
+.introduce__triangle {
+  position: absolute;
+  bottom: 0;
+
+  width: 50%;
+  height: 13%;
+
+  background-color: $grey-light;
+}
+.triangle_left {
+  left: 0;
+  clip-path: polygon(0 0, 100% 100%, 0 100%);
+}
+.triangle_right {
+  right: 0;
+  clip-path: polygon(100% 0, 100% 100%, 0 100%);
+}
+
+@media (min-width: 768px){
+  .circle_bottom_right {
+    right: 280px;
+  }
+}
+
+@media (min-width: 992px){
+
+  .introduce__info {
+    width: 50%;
+    padding-bottom: 255px;
+
+    .h5__title {
+      margin-bottom: 70px;
+    }
+  }
+
+  .introduce__img {
+    width: 50%;
+    height: auto;
+    background-position: center bottom;
+  }
+
+  .introduce__triangle {
+    height: 19%;
+  }
+
+  .wave_top_right {
+    top: 50px;
+  }
+
+  .wave_bottom_left {
+    left: 0;
+    bottom: 100px;
+  }
+
+  .circle_top_left {
+    top: 0;
+    left: 0;
+  }
+
+  .circle_bottom_right {
+    bottom: 200px;
+    right: 0;
+  }
+}
+
+@media (min-width: 1280px){
+  .introduce__content {
+    padding-top: 40px;
+    padding-left: 100px;
+    padding-right: 100px;
+  }
+  .label_style {
+    font-size: 18px;
+  }
+}
+

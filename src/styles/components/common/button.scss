@@ -1,0 +1,78 @@
+@import "../../colors";
+
+.button {
+  text-align: center;
+  color: $white;
+
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.button_size_s {
+  width: 100px;
+  height: 40px;
+
+  font-size: 15px;
+  font-weight: 500;
+  border-radius: 100px;
+}
+
+.button_size_m {
+  width: 225px;
+  height: 60px;
+
+  font-size: 18px;
+  font-weight: 600;
+
+  border-radius: 20px;
+}
+.button_size_l {
+  width: 265px;
+  height: 70px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  border-radius: 20px;
+}
+.button_size_xl {
+  width: 300px;
+  height: 80px;
+
+  font-size: 22px;
+  font-weight: 600;
+
+  border-radius: 25px;
+}
+
+.button_bg_fill {
+  background-color: $orange-main;
+}
+.button_bg_gradient {
+  background: linear-gradient(130deg, #FF7B4E 15.57%, #FF584E 95.03%);
+}
+
+@media (min-width: 1280px){
+
+  .button_size_s {
+    width: 130px;
+    height: 50px;
+  }
+
+  .button_size_m {
+    height: 80px;
+    font-size: 20px;
+    border-radius: 27px;
+  }
+  .button_size_l {
+    height: 90px;
+    font-size: 25px;
+    border-radius: 27px;
+  }
+  .button_size_xl {
+    height: 105px;
+    font-size: 25px;
+    border-radius: 35px;
+  }
+}

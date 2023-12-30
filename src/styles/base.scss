@@ -1,0 +1,33 @@
+@import "colors";
+:root {
+  //font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  background: $grey-light;
+
+;
+}
+
+.wrapper {
+  background: linear-gradient(132deg, #428E5F -17.38%, #112120 78.4%);
+  border-radius: 50px;
+}
+body {
+  &.no-scroll {
+    overflow: hidden;
+  }
+}
+
+@media (min-width: 1280px){
+
+  .wrapper {
+    border-radius: 90px;
+  }
+
+}
+
+
+
+
