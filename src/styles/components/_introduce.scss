@@ -35,13 +35,12 @@
   font-size: 16px;
 }
 
-
 .introduce__img {
   position: relative;
   width: 100%;
   height: 300px;
 
-  background: no-repeat right bottom url("../../../public/images/introduce.png");
+  background: no-repeat right bottom url("../../images/introduce.png");
   background-size: contain;
 }
 
@@ -159,7 +158,7 @@
 @media (min-resolution: 2dppx) {
 
   .introduce__img {
-    background-image: url("../../../public/images/introduce@2x.png");
+    background-image: url("../../images/introduce@2x.png");
   }
 }
 
